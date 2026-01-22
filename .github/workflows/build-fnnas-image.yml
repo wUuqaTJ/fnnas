@@ -403,7 +403,7 @@ jobs:
           [[ -n "${fnnas_storage}" ]] || fnnas_storage="fnnas_save"
           echo "build_tag=${fnnas_storage}" >> ${GITHUB_ENV}
           ln -sf /builder/fnnas ${{ github.workspace }}/fnnas
-          ln -sf /builder/fnnas /home/runner/work/_actions/ophub/fnnas/main/fnnas
+          #ln -sf /builder/fnnas /home/runner/work/_actions/ophub/fnnas/main/fnnas
 
           echo "status=success" >> ${GITHUB_OUTPUT}
 
